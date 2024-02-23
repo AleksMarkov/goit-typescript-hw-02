@@ -12,11 +12,10 @@ enum Week {
   Saturday,
   Sunday,
 }
-let weekend: boolean;
 
 function isWeekend(day: Week): boolean {
   if (day === Week.Saturday || day === Week.Sunday) {
-    return (weekend = true);
+    return true;
   }
-  return (weekend = false);
+  return false;
 }
